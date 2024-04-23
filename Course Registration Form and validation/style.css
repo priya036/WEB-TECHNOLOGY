@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #171616;
+  background-repeat: no-repeat;
+  background-size: 2000px;
+  color: black;
+}
+.container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background-color: rgb(196, 198, 199);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: rgb(13, 13, 13);
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 13px;
+  margin-top: 8px;
+  border: 1px solid #545050;
+  border-radius: 6px;
+  padding: 0 15px;
+  color: #707070;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+  /* border: 1px solid whitesmoke;
+  border-radius: 10px; */
+  padding: 10px;
+  
+}
+.gender-box h3 {
+  color: rgb(14, 13, 13);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 30px;
+}
+.gender input {
+  accent-color: rgb(117, 115, 5);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: rgb(16, 16, 16);
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(205, 190, 23);
+}
+.form button:hover {
+  background: rgb(142, 138, 2);
+}
+.select-box{
+    background-color: #ffffff;
+}
+h1{
+    color: #0a0909;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(205, 190, 23);
+    padding: 20px;
+   
+}
+.alert{
+  color: red;
+}

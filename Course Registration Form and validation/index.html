@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>course enrollment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>COURSE REGISTRATION</h1>
+        <form action="./submit.html" class="form" name="form" id="myform" onsubmit="return validation()">
+            <!-- name -->
+            <div class="input-box" >
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter full name" id="name" />
+            </div>
+            <!-- email -->
+            <div class="column">
+                <div class="input-box">
+                <label>Email Address</label>
+                <input type="text" placeholder="Enter email address" id="mail" name="mail"/>
+            </div>
+            <!-- course intrested -->
+            <div class="input-box">
+            <label>Course interested</label>
+                <select name="course" id="interest" class="select-box">
+                    <option value="" hidden>Course interested</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </div>
+        <!-- pno -->
+        <div class="column">
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter phone number" id="pno"/>
+            </div>
+        <!-- branch -->
+            <div class="input-box">
+                <label>Branch</label>
+                <select name="branch" id="dept" class="select-box">
+                    <option value="" hidden>Branch</option>
+                    <option value="AI">AI&DS</option>
+                    <option value="CS">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="MECH">MECH</option>
+                </select>
+            </div>
+        </div>
+            <!-- gender -->
+            <div class="column">
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="gen" name="gender"/>
+                            <label for="check-male">MALE</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="gen" name="gender" />
+                            <label for="check-female">FEMALE</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="gen" name="gender" />
+                            <label for="check-other">OTHERS</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- select course -->
+                <div class="gender-box">
+                    <h3>Course</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="checkbox" id="web" name="course"/>
+                            <label for="check-male">WEB</label>
+                        </div>
+                        <div class="gender">
+                            <input type="checkbox" id="web" name="course" />
+                            <label for="check-female">JAVA</label>
+                        </div>
+                        <div class="gender">
+                            <input type="checkbox" id="web" name="course" />
+                            <label for="check-other">PYTHON</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- address -->
+        <div class="column">
+            <div class="input-box address">
+                <label>Address</label>
+                <input type="text" placeholder="Enter the address" id="street"/>
+            </div>
+            <!-- state -->
+            <div class="input-box">
+                <label>State</label>
+                <select class="select-box" id="state">
+                    <option hidden>State</option>
+                    <option>Andra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Chhattisgarh</option>
+                    <option>Kerala</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Mizoram</option>
+                    <option>Rajasthan</option>
+                    <option>Tamil Nadu</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>West Bengal</option>
+                </select>
+            </div>
+        </div>  
+        <!-- password -->
+            <div class="column">
+                <div class="input-box">
+                <label>Password</label>
+                <input type="password" placeholder="New Password" id="pass" class="password"/>
+                <span id="message" style="color: red;"></span>
+            </div>
+            <!-- confirm password -->
+            <div class="input-box">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="cpass"/>
+                <span id="message" style="color: red;"></span>
+            </div>
+            </div>
+            <!-- <span class="alert" id="passwrd"></span> -->
+        </div>
+
+        <button>Submit</button>
+
+        </form>
+    </section>
+    <script src="./validate.js"></script>
+</body>
+
+</html>
